@@ -1,0 +1,41 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "npm run start:mongo & nodemon src/index.ts",
+        "start:mongo": "mongod --dbpath ./data/db --quiet > /dev/null 2>&1 &",
+        "stop:mongo": "kill $(cat mongod.pid) && rm mongod.pid",
+        "seed:mongo": "ts-node src/mongo/seedMongoDb.ts",
+        "eslint": "eslint",
+        "eslint-fix": "eslint --fix",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "apollo-server-express": "^3.13.0",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "graphql": "^16.10.0",
+        "mongodb": "^6.13.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.13.4",
+        "@typescript-eslint/eslint-plugin": "^8.24.0",
+        "eslint": "^9.20.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.1",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    }
+}
