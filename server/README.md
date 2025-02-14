@@ -4,15 +4,19 @@ This is a simple [GraphQL](https://graphql.org/) server implementation using [Ap
 
 ## Setup
 
-- `npm install`
+- Install npm dependencies
 
-- Install MongoDB, using [homebrew](https://brew.sh) or download and install from [mongodb.com](https://www.mongodb.com/try/download/community)
+    ```sh
+    npm install
+    ```
+
+- Install MongoDB, using [homebrew](https://brew.sh) or [download](https://www.mongodb.com/try/download/community) and install
 
     ```sh
     brew install mongodb-community
     ```
 
-- Make mongoDB data directory
+- Make MongoDB data directory (in `server`)
 
     ```sh
     mkdir -p ./data/db
@@ -24,7 +28,7 @@ This is a simple [GraphQL](https://graphql.org/) server implementation using [Ap
     npm run start:mongo
     ```
 
-- Populate mongodb with data
+- Populate mongodb with data from `src/mongo/testFixtures/*.json`
 
     ```sh
     npm run seed:mongo
@@ -38,9 +42,15 @@ This is a simple [GraphQL](https://graphql.org/) server implementation using [Ap
 
 ## Run the server
 
-- `npm start`
+```sh
+npm start
+```
 
-    This also starts `mongod` in the background
+This also starts `mongod` in the background. Once done you can stop it by running:
+
+```sh
+npm run stop:mongo
+```
 
 ## API
 
@@ -116,7 +126,7 @@ Writing tests is encouraged, but not mandatory. You are welcome to include tests
 ## Linting
 
 This repo contains a basic linting setup using [eslint](https://eslint.org/) and [prettier](https://prettier.io/).
-You can setup your editor to show (and auto-fix on save) linting errors, e.g. using the [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+You can setup your editor to show linting errors (and/or auto-fix on save). E.g. using the [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 You can also run:
 
