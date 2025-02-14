@@ -1,6 +1,6 @@
 import type MongoConnection from "./MongoConnection";
 
-import { MongoClient, Db } from "mongodb";
+import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 
 dotenv.config();

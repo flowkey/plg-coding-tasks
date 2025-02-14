@@ -2,14 +2,13 @@
     "name": "server",
     "version": "1.0.0",
     "main": "index.js",
-    "type": "module",
     "scripts": {
         "start": "npm run start:mongo & nodemon src/index.ts",
         "start:mongo": "mongod --dbpath ./data/db --quiet > /dev/null 2>&1 &",
         "stop:mongo": "kill $(cat mongod.pid) && rm mongod.pid",
         "seed:mongo": "ts-node src/mongo/seedMongoDb.ts",
-        "eslint": "eslint",
-        "eslint-fix": "eslint --fix",
+        "eslint": "eslint src",
+        "eslint-fix": "eslint --fix src",
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage"
