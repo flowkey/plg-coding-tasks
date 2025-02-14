@@ -1,4 +1,8 @@
+import type MongoConnection from "./mongo/MongoConnection";
+
 import { gql } from "apollo-server-express";
+
+export type GraphQLContext = { mongo: Awaited<MongoConnection> };
 
 export const typeDefs = gql`
   type Query {

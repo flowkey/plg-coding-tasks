@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon src/index.ts",
+        "start": "npm run start:mongo & nodemon src/index.ts",
+        "start:mongo": "mongod --dbpath ./data/db --quiet > /dev/null 2>&1 &",
+        "stop:mongo": "kill $(cat mongod.pid) && rm mongod.pid",
+        "seed:mongo": "ts-node src/mongo/seedMongoDb.ts",
         "eslint": "eslint --ext .js,.jsx,.ts,.tsx src",
         "eslint-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
         "test": "jest",
@@ -18,7 +21,8 @@
         "apollo-server-express": "^3.13.0",
         "dotenv": "^16.4.7",
         "express": "^4.21.2",
-        "graphql": "^16.10.0"
+        "graphql": "^16.10.0",
+        "mongodb": "^6.13.0"
     },
     "devDependencies": {
         "@types/jest": "^29.5.14",
