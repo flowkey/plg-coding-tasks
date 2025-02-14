@@ -2,10 +2,45 @@
 
 This is a simple [GraphQL](https://graphql.org/) server implementation using [Apollo](https://www.apollographql.com/).
 
-## Run the server
+## Setup
 
 - `npm install`
+
+- Install MongoDB, using [homebrew](https://brew.sh) or download and install from [mongodb.com](https://www.mongodb.com/try/download/community)
+
+    ```sh
+    brew install mongodb-community
+    ```
+
+- Make mongoDB data directory
+
+    ```sh
+    mkdir -p ./data/db
+    ```
+
+- Start `mongod` instance
+
+    ```sh
+    npm run start:mongo
+    ```
+
+- Populate mongodb with data
+
+    ```sh
+    npm run seed:mongo
+    ```
+
+- Optionally, stop `mongod`
+
+    ```sh
+    npm run stop:mongo
+    ```
+
+## Run the server
+
 - `npm start`
+
+    This also starts `mongod` in the background
 
 ## API
 
@@ -17,11 +52,26 @@ You can test your queries and mutations in GraphQL Playground by visiting the [e
 
 #### GraphQL queries
 
-`hello`: a simple Hello, World! query. Just to make sure your server is up and running!
+`HelloWorld`: a simple Hello, World! query. Just to make sure your server is up and running!
 
 ```gql
 query HelloWorld {
     hello
+}
+```
+
+`PricingPlans`: Fetches pricing plans for given countryCode
+
+```gql
+query PricingPlans($countryCode: String) {
+    pricingPlans(countryCode: $countryCode) {
+        _id
+        billingFrequency
+        trialPeriodDays
+        isRecommended
+        currency
+        price
+    }
 }
 ```
 
