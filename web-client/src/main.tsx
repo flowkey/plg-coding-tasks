@@ -1,10 +1,11 @@
 import ReactDOM from "react-dom/client";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "./graphql/client";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ApolloProvider client={client}>
     <App />
-  </ApolloProvider>,
+  </ApolloProvider>
 );
