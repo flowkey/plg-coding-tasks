@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "monthly",
+        "billingFrequency": "monthly",
+        "regionalPrices": [
+            { "countryCode": "US", "currency": "USD", "price": "19.99" },
+            { "countryCode": "CN", "currency": "CNY", "price": "129.00" },
+            { "countryCode": "JP", "currency": "JPY", "price": "2,800" },
+            { "countryCode": "DE", "currency": "EUR", "price": "18.99" },
+            { "countryCode": "IN", "currency": "INR", "price": "1,499" },
+            { "countryCode": "GB", "currency": "GBP", "price": "15.99" },
+            { "countryCode": "FR", "currency": "EUR", "price": "18.99" },
+            { "countryCode": "IT", "currency": "EUR", "price": "18.99" },
+            { "countryCode": "CA", "currency": "CAD", "price": "24.99" },
+            { "countryCode": "BR", "currency": "BRL", "price": "99.99" }
+        ]
+    },
+    {
+        "_id": "yearly",
+        "billingFrequency": "yearly",
+        "trialPeriodDays": 7,
+        "isRecommended": true,
+        "regionalPrices": [
+            { "countryCode": "US", "currency": "USD", "price": "119.99" },
+            { "countryCode": "CN", "currency": "CNY", "price": "799.00" },
+            { "countryCode": "JP", "currency": "JPY", "price": "16,800" },
+            { "countryCode": "DE", "currency": "EUR", "price": "114.99" },
+            { "countryCode": "IN", "currency": "INR", "price": "8,999" },
+            { "countryCode": "GB", "currency": "GBP", "price": "99.99" },
+            { "countryCode": "FR", "currency": "EUR", "price": "114.99" },
+            { "countryCode": "IT", "currency": "EUR", "price": "114.99" },
+            { "countryCode": "CA", "currency": "CAD", "price": "149.99" },
+            { "countryCode": "BR", "currency": "BRL", "price": "599.99" }
+        ]
+    }
+]
