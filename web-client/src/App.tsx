@@ -7,10 +7,16 @@ function App() {
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-dark text-white">
-      <h1 className="mb-3">Welcome to Flowkey</h1>
-      <p className="text-muted">Learn piano the easy way</p>
+      <Container
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1 className="mb-3">Welcome to Flowkey</h1>
+        <p className="text-muted">Learn piano the easy way</p>
 
-      <Container>
         <Button
           variant="primary"
           className="mt-auto mb-5"
@@ -19,7 +25,6 @@ function App() {
           Show Pricing
         </Button>
       </Container>
-
       <PricingModal show={showModal} onHide={() => setShowModal(false)} />
     </div>
   );

@@ -52,25 +52,45 @@ function PricingModal({ show, onHide }: { show: boolean; onHide: () => void }) {
           {pricingPlans.map((plan: PricingPlan) => (
             <Col key={plan._id} md={6}>
               <Card
+                style={{ minHeight: "200px" }}
                 className={`mb-3 ${plan.isRecommended ? "border-primary" : ""}`}
               >
-                <Card.Body>
-                  <Card.Title>
-                    {plan.billingFrequency === "monthly"
-                      ? "Monthly Plan"
-                      : "Yearly Plan"}
-                  </Card.Title>
-                  <Card.Text>
-                    <strong>
-                      ${plan.price} {plan.currency}
-                    </strong>
-                  </Card.Text>
-                  {plan.trialPeriodDays && (
-                    <p className="text-muted">
-                      Includes {plan.trialPeriodDays}-day trial
-                    </p>
-                  )}
-                  <Button variant="primary">
+                <Card.Body
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div>
+                    <Card.Title>
+                      {plan.billingFrequency === "monthly"
+                        ? "Monthly Plan"
+                        : "Yearly Plan"}
+                    </Card.Title>
+                    <Card.Text>
+                      <strong>
+                        ${plan.price} {plan.currency}
+                      </strong>
+                    </Card.Text>
+                    {plan.trialPeriodDays && (
+                      <p className="text-muted">
+                        Includes {plan.trialPeriodDays}-day trial
+                      </p>
+                    )}
+                  </div>
+                  <Button
+                    variant="primary"
+                    onClick={() =>
+                      alert(
+                        `You selected the ${
+                          plan.billingFrequency === "monthly"
+                            ? "Monthly Plan"
+                            : "Yearly Plan"
+                        }`
+                      )
+                    }
+                  >
                     {plan.trialPeriodDays ? "Start Trial" : "Subscribe"}
                   </Button>
                 </Card.Body>
