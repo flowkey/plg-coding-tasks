@@ -7,21 +7,61 @@ This is a simple [GraphQL](https://graphql.org/) server implementation using [Ap
 - `npm install`
 - `npm start`
 
-## GraphQL
+## API
+
+### GraphQL API
 
 Once the server starts, the GraphQL API is available on http://localhost:4000/graphql
 
 You can test your queries and mutations in GraphQL Playground by visiting the [endpoint](http://localhost:4000/graphql) in your browser or you can use [Apollo Sandbox](https://studio.apollographql.com/sandbox/explorer)
 
-### Queries
+#### GraphQL queries
 
-A simple Hello, World! query. Just to make sure your server is up and running
+`hello`: a simple Hello, World! query. Just to make sure your server is up and running!
 
 ```gql
 query HelloWorld {
     hello
 }
 ```
+
+### REST or other APIs
+
+In case you are not familiar with GraphQL or prefer using another API (e.g., REST), you are free to do so. Feel free to modify the server setup or implement an alternative API style that best suits your approach.
+
+## Testing
+
+This repository includes [**Jest**](https://jestjs.io) for unit testing. Tests are written in **TypeScript** and can be conveniently placed **alongside the files/functions they test**.
+
+### Running tests
+
+Use the following commands to run tests:
+
+- Run all tests:
+    ```sh
+    npm test
+    ```
+- Run tests in watch mode (auto-retest on file changes):
+    ```sh
+    npm run test:watch
+    ```
+- Run tests with coverage report:
+    ```sh
+    npm run test:coverage
+    ```
+
+### Example test file
+
+Check out a sample test file for reference:  
+[`server/src/utils/calculate.test.ts`](server/src/utils/calculate.test.ts)
+
+### Your choice of testing tools
+
+While Jest is pre-configured, you are free to setup and use any testing framework or tool you prefer. It would be great if it supports Typescript, but doesn't have to.
+
+### Testing is **encouraged**, but is **not required**
+
+Writing tests is encouraged, but not mandatory. You are welcome to include tests where you feel they add value. If you prefer **TDD** or any other methodology, feel free to apply it!
 
 ## Linting
 
