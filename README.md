@@ -16,13 +16,13 @@ _If anything is unclear, feel free to reach out—we’re happy to help!_
 2. **Choose a challenge**  
    We offer multiple coding challenges, each focusing on different aspects of development. Choose the one that aligns with your experience and interests:
 
-   - **[API Implementation](challenges/api.md)**  
+   - **[API Implementation](challenges/api/README.md)**  
      Extend and improve an existing GraphQL API using Apollo Server (or REST if you prefer). This challenge focuses on backend skills, API design, and data handling.
 
-   - **[React UI](challenges/react-ui.md)**  
+   - **[React UI](challenges/react-ui/README.md)**  
      Build a view that is composed of reusable, interactive UI component based on a given Figma design. Ideal for candidates with strong frontend and React experience.
 
-   - **[Full-Stack Feature](challenges/fullstack.md)**  
+   - **[Full-Stack Feature](challenges/fullstack/README.md)**  
      Implement a feature that integrates both backend (GraphQL) and frontend (React). A good fit if you enjoy working across the stack.
 
    Details can be found in the respective challenge's document.
