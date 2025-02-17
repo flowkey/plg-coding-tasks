@@ -1,0 +1,53 @@
+{
+  "userId": "4",
+  "orders": [
+    {
+      "startTimeMillis": "1635129777742",
+      "expiryTimeMillis": "1669655777742",
+      "autoRenewing": true,
+      "priceCurrencyCode": "TRY",
+      "priceAmountMicros": "559990000",
+      "countryCode": "TR",
+      "developerPayload": "",
+      "orderId": "GPA.3387-8411-5174-97077",
+      "productId": "flowkey.eu.12month_sale30",
+      "introductoryPriceInfo": {
+        "introductoryPriceCurrencyCode": "TRY",
+        "introductoryPriceAmountMicros": "559990000",
+        "introductoryPricePeriod": "P1Y",
+        "introductoryPriceCycles": 1
+      },
+      "paymentState": 1,
+      "acknowledgementState": 1,
+      "kind": "androidpublisher#subscriptionPurchase"
+    },
+    {
+      "startTimeMillis": "1669655777742",
+      "expiryTimeMillis": "1704388129330",
+      "userCancellationTimeMillis": "1687020000000",
+      "autoRenewing": false,
+      "priceCurrencyCode": "TRY",
+      "priceAmountMicros": "799990000",
+      "countryCode": "TR",
+      "developerPayload": "",
+      "orderId": "GPA.3387-8411-5174-97077",
+      "productId": "flowkey.eu.12month_sale30",
+      "acknowledgementState": 1,
+      "kind": "androidpublisher#subscriptionPurchase"
+    },
+    {
+      "startTimeMillis": "1705420121399",
+      "expiryTimeMillis": "1768578497808",
+      "autoRenewing": true,
+      "priceCurrencyCode": "TRY",
+      "priceAmountMicros": "799000000",
+      "countryCode": "TR",
+      "developerPayload": "",
+      "paymentState": 1,
+      "orderId": "GPA.3377-0646-2220-41563",
+      "productId": "flowkey.eu.12month_trial",
+      "acknowledgementState": 1,
+      "kind": "androidpublisher#subscriptionPurchase"
+    }
+  ]
+}

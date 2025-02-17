@@ -1,0 +1,33 @@
+{
+  "userId": "2",
+  "revision": "1739795375000_490002086799901_5",
+  "bundleId": "com.flowkey.app",
+  "appAppleId": 1020357408,
+  "environment": "Production",
+  "hasMore": false,
+  "transactions": [
+    {
+      "transactionId": "490002086799901",
+      "originalTransactionId": "490002086799901",
+      "webOrderLineItemId": "490000971971416",
+      "bundleId": "com.flowkey.app",
+      "productId": "flowkey.eu.12month_trial",
+      "subscriptionGroupIdentifier": "20230842",
+      "purchaseDate": "2025-02-17T12:29:30.000Z",
+      "originalPurchaseDate": "2025-02-17T12:29:31.000Z",
+      "expiresDate": "2025-02-24T12:29:30.000Z",
+      "quantity": 1,
+      "type": "Auto-Renewable Subscription",
+      "inAppOwnershipType": "PURCHASED",
+      "signedDate": "2025-02-17T19:01:20.381Z",
+      "offerType": 1,
+      "environment": "Production",
+      "transactionReason": "PURCHASE",
+      "storefront": "CHE",
+      "storefrontId": "143459",
+      "price": 0,
+      "currency": "CHF",
+      "offerDiscountType": "FREE_TRIAL"
+    }
+  ]
+}
