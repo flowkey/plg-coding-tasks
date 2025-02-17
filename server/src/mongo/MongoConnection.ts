@@ -1,4 +1,5 @@
-import type { ClientSession, Collection, Db, MongoClient } from "mongodb";
+/* eslint-disable no-unused-vars */
+import type { Collection, Db } from "mongodb";
 
 import type PricingPlan from "../types/PricingPlan";
 
