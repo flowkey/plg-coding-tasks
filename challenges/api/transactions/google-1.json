@@ -1,0 +1,19 @@
+{
+  "userId": "3",
+  "orders": [
+    {
+      "startTimeMillis": "1732350284662",
+      "expiryTimeMillis": "1764491063347",
+      "autoRenewing": true,
+      "priceCurrencyCode": "EUR",
+      "priceAmountMicros": "179990000",
+      "countryCode": "FR",
+      "developerPayload": "",
+      "paymentState": 1,
+      "orderId": "GPA.3325-7545-8583-19489",
+      "productId": "flowkey.eu.full.12month",
+      "acknowledgementState": 1,
+      "kind": "androidpublisher#subscriptionPurchase"
+    }
+  ]
+}

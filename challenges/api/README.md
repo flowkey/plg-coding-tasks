@@ -10,6 +10,10 @@ Each provider (App Store, Google Play, etc.) records subscription transactions d
 - When the subscription expires/expired
 - The current status of the subscription
 
+You can find the transaction jsons under the `transactions` folder.
+
+- user id 3 has purchases from **both apple and google**
+
 ## Subscription Lifecycle
 
 A typical subscription goes through the following lifecycle:
@@ -24,9 +28,7 @@ A typical subscription goes through the following lifecycle:
 
 ## Transactions
 
-Here are some sample transactions and summary of the important fields from each of the payment providers.
-
-For this code challenge we'll use two:
+Here is a summary of the important fields from each of the payment providers. For this code challenge we'll use Apple AppStore and Google Play Store:
 
 ### Apple AppStore
 
