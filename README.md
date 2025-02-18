@@ -1,6 +1,8 @@
 # Code Challenge for PLG
 
-Welcome to the coding challenge for [flowkey](https://www.flowkey.com)! This repository contains a set of coding tasks designed to assess different skills. Based on your experience and interests, you can choose the challenge that best fits you.
+Welcome to the coding challenge for the Product-led Growth team at [flowkey](https://www.flowkey.com).
+
+This repository contains a set of coding challenges designed to assess different skills. Based on your experience and interests, you can choose the challenge that best fits you.
 
 **If anything is unclear, feel free to reach out. We’re happy to help! 😊**
 
