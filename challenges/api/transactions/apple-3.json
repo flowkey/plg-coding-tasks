@@ -19,7 +19,7 @@
       "quantity": 1,
       "type": "Auto-Renewable Subscription",
       "inAppOwnershipType": "PURCHASED",
-      "signedDate": "2025-02-17T19:05:19.817Z",
+      "signedDate": "2025-02-18T11:44:06.497Z",
       "revocationReason": 0,
       "revocationDate": "2025-02-17T17:51:47.000Z",
       "environment": "Production",
@@ -42,7 +42,7 @@
       "quantity": 1,
       "type": "Auto-Renewable Subscription",
       "inAppOwnershipType": "PURCHASED",
-      "signedDate": "2025-02-17T19:05:19.817Z",
+      "signedDate": "2025-02-18T11:44:06.497Z",
       "offerType": 1,
       "environment": "Production",
       "transactionReason": "PURCHASE",
@@ -52,5 +52,15 @@
       "currency": "GBP",
       "offerDiscountType": "FREE_TRIAL"
     }
-  ]
+  ],
+  "renewalInfo": {
+    "originalTransactionId": "120002649116221",
+    "autoRenewProductId": "flowkey.eu.full.12month",
+    "productId": "flowkey.eu.full.12month",
+    "autoRenewStatus": 0,
+    "signedDate": "2025-02-18T11:44:06.494Z",
+    "environment": "Production",
+    "recentSubscriptionStartDate": "2025-01-11T17:23:47.000Z",
+    "renewalDate": "2026-01-18T17:23:47.000Z"
+  }
 }

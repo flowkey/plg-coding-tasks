@@ -19,7 +19,7 @@
       "quantity": 1,
       "type": "Auto-Renewable Subscription",
       "inAppOwnershipType": "PURCHASED",
-      "signedDate": "2025-02-17T19:01:20.381Z",
+      "signedDate": "2025-02-18T11:43:10.222Z",
       "offerType": 1,
       "environment": "Production",
       "transactionReason": "PURCHASE",
@@ -29,5 +29,15 @@
       "currency": "CHF",
       "offerDiscountType": "FREE_TRIAL"
     }
-  ]
+  ],
+  "renewalInfo": {
+    "originalTransactionId": "490002086799901",
+    "autoRenewProductId": "flowkey.eu.12month_trial",
+    "productId": "flowkey.eu.12month_trial",
+    "autoRenewStatus": 0,
+    "signedDate": "2025-02-18T11:43:10.217Z",
+    "environment": "Production",
+    "recentSubscriptionStartDate": "2025-02-17T12:29:30.000Z",
+    "renewalDate": "2025-02-24T12:29:30.000Z"
+  }
 }
