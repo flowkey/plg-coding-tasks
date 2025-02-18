@@ -10,9 +10,9 @@ This repository contains a set of coding challenges designed to assess different
 
 1. **Copy the repository**
 
-   Please create a **private** repository in your GitHub account by clicking:[Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template). Alternatively, you can clone it manually.
+   Please create a **private** repository in your GitHub account by clicking on the [Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) option.
 
-   **Do not fork** this repository.
+   Alternatively, you can **clone** it manually. **Do not fork** this repository.
 
 2. **Choose a challenge**  
    We offer multiple coding challenges, each focusing on different aspects of development. Choose the one that aligns with your experience and interests:
