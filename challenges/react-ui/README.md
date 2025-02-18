@@ -1,4 +1,4 @@
-# React UI
+# UI Challenge
 
 ## Main Objective
 
